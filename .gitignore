@@ -1,0 +1,7 @@
+build/
+liboqs-install/
+certs/server.key
+captures/*.pcap
+__pycache__/
+*.o
+*.so
