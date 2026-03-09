@@ -1,4 +1,3 @@
-````markdown
 # PoC TLS 1.3 Híbrid X25519MLKEM768
 
 **Autor:** Marti Armengol  
@@ -78,5 +77,4 @@ tfg-poc/
     └── poc_documentation.pdf # Documentació completa del PoC
 ```
 
-```
 ```
