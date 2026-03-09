@@ -76,5 +76,3 @@ tfg-poc/
 └── docs/
     └── poc_documentation.pdf # Documentació completa del PoC
 ```
-
-```

@@ -57,9 +57,9 @@ Problema trobat: liboqs.so.9 no al path del linker
 Solució: /etc/ld.so.conf.d/liboqs.conf + sudo ldconfig
 
 
-## Pas 2.4 — Certificats de test [pendent]
+## Pas 2.4 — Certificats de test 
 
-## Pas 2.5 — Execució servidor [pendent]
+## Pas 2.5 — Execució servidor 
 
 openssl s_server \
     -cert server.crt \
@@ -74,7 +74,7 @@ Using default temp DH parameters
 ACCEPT
 
 
-## Pas 2.6 — Execució client [pendent]
+## Pas 2.6 — Execució client 
 
 openssl s_client \
     -connect localhost:4433 \
@@ -97,7 +97,7 @@ Negotiated TLS1.3 group: X25519MLKEM768
 
 
 
-## Pas 2.7 — Captura Wireshark [pendent]
+## Pas 2.7 — Captura Wireshark
 
 Frame 4: 1542 bytes on wire (12336 bits), 1542 bytes captured (12336 bits)
 Ethernet II, Src: 00:00:00_00:00:00 (00:00:00:00:00:00), Dst: 00:00:00_00:00:00 (00:00:00:00:00:00)
@@ -201,5 +201,3 @@ vulnerable a l'algorisme de Shor. Aquesta és la debilitat residual documentada 
 verificada. La condició C3 (descart de claus efímeres) és garantida per l'especificació
 TLS 1.3 i la implementació OpenSSL 3.5.4.
 
-            
-## Anàlisi i Conclusions [pendent]
