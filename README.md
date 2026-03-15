@@ -1,78 +1,41 @@
-# PoC TLS 1.3 Híbrid X25519MLKEM768
+# TFG PoC — TLS 1.3 Híbrid X25519MLKEM768
 
-**Autor:** Marti Armengol  
-**Universitat:** UPF  
-**Data:** Març 2026  
+**TFG:** Seguretat Post-Quàntica en TLS 1.3: Anàlisi de Garanties i
+Vulnerabilitats en Handshakes Híbrids X25519 + ML-KEM (FIPS 203)
+**Autor:** Martí Armengol | UPF Enginyeria Informàtica | Març 2026
 
-**TFG:** *Anàlisi de Seguretat del Handshake TLS 1.3 amb Criptografia Post-Quàntica Híbrida*
+## Contingut
 
-## Descripció
-
-Prova de concepte que demostra la negociació del grup híbrid post-quàntic `X25519MLKEM768` (X25519 + ML-KEM-768 / FIPS 203) en una connexió TLS 1.3 real, utilitzant:
-
-- OpenSSL 3.5.4
-- liboqs 0.15.0
-- OQS-Provider 0.12.0
-
-## Evidències obtingudes
-
-- `Negotiated TLS1.3 group: X25519MLKEM768` — sortida del client OpenSSL
-- `key_share X25519MLKEM768 (0x11ec), 1216 bytes` — captura de Wireshark
-- `psk_key_exchange_modes: psk_dhe_ke` — *Forward Secrecy* verificada
+| Directori | Descripció |
+|-----------|-----------|
+| `setup/` | Scripts d'instal·lació (liboqs, OQS-Provider, certs) |
+| `poc/` | PoC base: servidor + client TLS 1.3 X25519MLKEM768 |
+| `attacks/A1_downgrade/` | Atac de downgrade de grup (3 escenaris) |
+| `attacks/A2_0rtt_replay/` | Replay attack sobre 0-RTT Early Data |
+| `attacks/A3_mitm_pki/` | MitM sobre PKI clàssica (debilitat autenticació) |
+| `certs/` | Certificats ECDSA P-256 de test |
 
 ## Requisits
+- Debian 13 Trixie / Ubuntu 22.04+
+- OpenSSL 3.3+, liboqs 0.15.0, OQS-Provider 0.12.0
 
-- Debian 13 Trixie (amd64) — OpenSSL 3.5.4 natiu
-- CMake ≥ 3.20
-- GCC ≥ 11
-- Ninja
-- Aproximadament 3 GB d’espai lliure
-
-## Instal·lació completa
-
+## Instal·lació ràpida
 ```bash
-cd setup/
-./install_deps.sh
-./build_liboqs.sh
-./build_oqs_provider.sh
-./gen_certs.sh
-````
-
-## Execució del PoC
-
-### Terminal 1 — Servidor
-
-```bash
-./poc/run_server.sh
+bash setup/install_deps.sh
+bash setup/build_liboqs.sh
+bash setup/build_oqs_provider.sh
+bash setup/gen_certs.sh
 ```
 
-### Terminal 2 — Client
-
+## Execució PoC base
 ```bash
-./poc/run_client.sh
+bash poc/run_server.sh   # Terminal 1
+bash poc/run_client.sh   # Terminal 2
 ```
 
-### Terminal 3 (opcional) — Captura
-
+## Execució Atacs (Cap. 4)
 ```bash
-./poc/capture.sh
-```
-
-## Estructura del projecte
-
-```text
-tfg-poc/
-├── setup/
-│   ├── install_deps.sh       # Dependències apt
-│   ├── build_liboqs.sh       # Compilació de liboqs 0.15.0
-│   ├── build_oqs_provider.sh # Compilació d'OQS-Provider 0.12.0
-│   └── gen_certs.sh          # Generació de certificats ECDSA P-256 de prova
-├── poc/
-│   ├── run_server.sh         # Servidor TLS 1.3
-│   ├── run_client.sh         # Client TLS 1.3
-│   └── capture.sh            # Captura amb tcpdump
-├── certs/                    # server.key + server.crt
-├── captures/                 # .pcap + captures de pantalla de Wireshark
-└── docs/
-    └── poc_documentation.pdf # Documentació completa del PoC
+bash attacks/A1_downgrade/run_attack_a1.sh
+bash attacks/A2_0rtt_replay/run_attack_a2.sh
+bash attacks/A3_mitm_pki/run_attack_a3.sh
 ```

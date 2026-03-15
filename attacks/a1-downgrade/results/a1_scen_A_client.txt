@@ -1,0 +1,47 @@
+Connecting to ::1
+Can't use SSL_get_servername
+depth=0 CN=localhost, O=TFG-PoC-UPF, C=ES
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=localhost, O=TFG-PoC-UPF, C=ES
+   i:CN=localhost, O=TFG-PoC-UPF, C=ES
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Mar  9 15:16:04 2026 GMT; NotAfter: Mar  9 15:16:04 2027 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIB4DCCAYWgAwIBAgIUUy+woMKwVAssGKE39wu9JR8+olIwCgYIKoZIzj0EAwIw
+NzESMBAGA1UEAwwJbG9jYWxob3N0MRQwEgYDVQQKDAtURkctUG9DLVVQRjELMAkG
+A1UEBhMCRVMwHhcNMjYwMzA5MTUxNjA0WhcNMjcwMzA5MTUxNjA0WjA3MRIwEAYD
+VQQDDAlsb2NhbGhvc3QxFDASBgNVBAoMC1RGRy1Qb0MtVVBGMQswCQYDVQQGEwJF
+UzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABAgshrzuUUpfqJSFUNL8JOaZzRdK
+TTy2tYbNWAHjw5+fBcsMHaA0vt5mIvH95zd3sroDUgCIVsGH+vgSNGljpeWjbzBt
+MB0GA1UdDgQWBBSvQo81oXSyHve312wuQxhh9Ii14jAfBgNVHSMEGDAWgBSvQo81
+oXSyHve312wuQxhh9Ii14jAPBgNVHRMBAf8EBTADAQH/MBoGA1UdEQQTMBGHBH8A
+AAGCCWxvY2FsaG9zdDAKBggqhkjOPQQDAgNJADBGAiEArf26b9IJ8C4XPmGdtd6j
+w5vXn9dBxnirC06z6RlpkTECIQCOoyf7bBWrT0xwXZrcyLDuowMeB/06qTMAd3LS
+X6yXSA==
+-----END CERTIFICATE-----
+subject=CN=localhost, O=TFG-PoC-UPF, C=ES
+issuer=CN=localhost, O=TFG-PoC-UPF, C=ES
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Peer Temp Key: X25519, 253 bits
+---
+SSL handshake has read 947 bytes and written 1872 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---

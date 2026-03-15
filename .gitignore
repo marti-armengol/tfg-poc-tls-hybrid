@@ -1,7 +1,35 @@
+# ─── Codi font de tercers (clonats, no són nostres) ───
 build/
 liboqs-install/
-certs/server.key
-captures/*.pcap
+
+# ─── Captures de xarxa (pesades → Drive) ───
+**/*.pcap
+**/*.pcapng
+
+# ─── Screenshots i imatges (→ Drive) ───
+**/*.png
+**/*.jpg
+**/*.jpeg
+
+# ─── Carpetes de resultats amb contingut mixt ───
+# Excepció: mantenim els .txt, .pem, .py, .log, .cnf
+# Les regles de dalt ja exclouen .pcap i .png
+
+# ─── Binaris i compilats ───
+**/*.so
+**/*.so.*
+**/*.a
+**/*.o
+**/_build/
+
+# ─── Python ───
 __pycache__/
-*.o
-*.so
+*.pyc
+*.pyo
+
+# ─── Sistema ───
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

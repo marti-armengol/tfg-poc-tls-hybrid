@@ -1,0 +1,119 @@
+Connecting to 127.0.0.1
+Can't use SSL_get_servername
+depth=0 CN=localhost, O=ATTACKER-ROGUE, C=ES
+verify error:num=18:self-signed certificate
+verify return:1
+depth=0 CN=localhost, O=ATTACKER-ROGUE, C=ES
+verify return:1
+CONNECTED(00000004)
+---
+Certificate chain
+ 0 s:CN=localhost, O=ATTACKER-ROGUE, C=ES
+   i:CN=localhost, O=ATTACKER-ROGUE, C=ES
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Mar 15 08:37:38 2026 GMT; NotAfter: Mar 15 08:37:38 2027 GMT
+-----BEGIN CERTIFICATE-----
+MIIB5DCCAYugAwIBAgIUOre/FVZrU64VX422UkPQgURDIxgwCgYIKoZIzj0EAwIw
+OjESMBAGA1UEAwwJbG9jYWxob3N0MRcwFQYDVQQKDA5BVFRBQ0tFUi1ST0dVRTEL
+MAkGA1UEBhMCRVMwHhcNMjYwMzE1MDgzNzM4WhcNMjcwMzE1MDgzNzM4WjA6MRIw
+EAYDVQQDDAlsb2NhbGhvc3QxFzAVBgNVBAoMDkFUVEFDS0VSLVJPR1VFMQswCQYD
+VQQGEwJFUzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABNUVzWtIGv4IgX4IGzJd
+/zPwd1zqgE5gYEBHt1bjoxLnFrUW/UEMD2+XjNppWcHnoSj2XguFsHagA4AaPJvN
+br+jbzBtMB0GA1UdDgQWBBS+7JZK49vF6TDH5X385yrCVzDA7jAfBgNVHSMEGDAW
+gBS+7JZK49vF6TDH5X385yrCVzDA7jAPBgNVHRMBAf8EBTADAQH/MBoGA1UdEQQT
+MBGHBH8AAAGCCWxvY2FsaG9zdDAKBggqhkjOPQQDAgNHADBEAiBq1yAn01AkGOJk
+AX2uzzT8TXCWAqd2vmSg5ixH9E7i5gIgHPi92b7e3tda/Y+y/oIWt5OC0DPQJSp6
+vRAToz+nHYA=
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN=localhost, O=ATTACKER-ROGUE, C=ES
+issuer=CN=localhost, O=ATTACKER-ROGUE, C=ES
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Negotiated TLS1.3 group: X25519MLKEM768
+---
+SSL handshake has read 1946 bytes and written 1556 bytes
+Verification error: self-signed certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 18 (self-signed certificate)
+---
+DONE
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: DAA53BF11C06DBAB687778E3E95FB35D054CDB3120185FCE44FEDE463A271BBA
+    Session-ID-ctx: 
+    Resumption PSK: 870BCABEFF1138E1EAA7299167F389CDA191616F15328177A75C9DA5C9D3BF98C08D6CA27FE5AC08C9FA6C62AAD506B6
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - ba ac 5e 8b 61 c4 a6 46-ad d0 e2 52 b5 c9 ec 60   ..^.a..F...R...`
+    0010 - d2 11 0c 52 d3 c7 c1 8b-da 2b 91 44 27 6e a0 e7   ...R.....+.D'n..
+    0020 - 7c 77 87 30 bf 57 95 f2-7e 74 a4 3d 22 df a7 4a   |w.0.W..~t.="..J
+    0030 - 20 d2 62 92 5b 56 31 d6-34 fe df b3 39 0c 94 72    .b.[V1.4...9..r
+    0040 - 79 5c cd ab 83 18 66 6f-54 74 7b 7c bf 89 d9 ed   y\....foTt{|....
+    0050 - 4e bf 19 11 57 6f 77 ff-89 41 cf 74 22 92 01 47   N...Wow..A.t"..G
+    0060 - e9 d2 79 14 be 8e 86 a5-7f 04 15 25 c7 42 6d cc   ..y........%.Bm.
+    0070 - 3d 6d c7 1e ef 7d 75 34-b3 0f ce 7e e7 e7 88 c2   =m...}u4...~....
+    0080 - 8b d2 4f 82 26 98 58 ac-56 6b f3 ce 4e 71 ad 8c   ..O.&.X.Vk..Nq..
+    0090 - b1 da 2f bd 75 8a a6 08-0a 93 d3 29 7e ef 13 c5   ../.u......)~...
+    00a0 - 85 06 70 19 a9 9d 57 7d-3a 22 1a 7d a3 12 1b 74   ..p...W}:".}...t
+    00b0 - f3 4d a5 97 c5 7c 10 c1-ac 2f bf 8c ae 51 6f a2   .M...|.../...Qo.
+    00c0 - 5a 82 c6 a0 b6 75 7b dc-b3 43 d7 36 eb b2 ae dc   Z....u{..C.6....
+
+    Start Time: 1773563957
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self-signed certificate)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: 0BDED335ED785FEB291711A5CC386C1BF57BEDC07B1BE3E55AB975201D8FFC71
+    Session-ID-ctx: 
+    Resumption PSK: FFCD49D99B1D226B50DC6C3B0B8288BD0A50265D3E787679C3310AB63DDF7CA480EAA9E70D351AD8652417EA7A245D61
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - ba ac 5e 8b 61 c4 a6 46-ad d0 e2 52 b5 c9 ec 60   ..^.a..F...R...`
+    0010 - 08 b4 24 3b ff ae ed 0f-90 cf d1 46 e4 88 5b 6e   ..$;.......F..[n
+    0020 - 6c 32 dc 2e e9 37 07 06-43 89 59 6d 7f 20 fd 7d   l2...7..C.Ym. .}
+    0030 - a2 50 00 7b 55 16 47 75-5d 6b 27 90 dd 7b ab 2e   .P.{U.Gu]k'..{..
+    0040 - 17 e5 47 c2 60 88 d3 57-72 eb 27 21 b6 ee d2 8b   ..G.`..Wr.'!....
+    0050 - 91 bb 07 e0 6e a3 48 86-f3 33 db e6 6e 8e cb e9   ....n.H..3..n...
+    0060 - 36 0f 3a b2 7c bc a9 a5-d0 d9 ad 95 64 1b 73 5b   6.:.|.......d.s[
+    0070 - 22 3e ca 8a 18 26 80 30-cf 35 bb 1d e1 86 7c ee   ">...&.0.5....|.
+    0080 - c1 b2 38 d7 0a a0 66 b5-e6 49 e8 68 aa 87 a5 6e   ..8...f..I.h...n
+    0090 - da c1 b2 7a 3f cd f1 e3-b9 12 97 7a 52 83 04 7d   ...z?......zR..}
+    00a0 - f5 c7 cd 73 5c 00 71 65-8b 9d db 88 cd 62 7a 4f   ...s\.qe.....bzO
+    00b0 - 06 e5 2a 8d 99 c1 33 bf-d7 be fc 03 e4 8b 02 09   ..*...3.........
+    00c0 - 8c 0c 4f 3d 40 51 23 f0-27 1f 32 c6 49 38 75 ca   ..O=@Q#.'.2.I8u.
+
+    Start Time: 1773563957
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self-signed certificate)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK

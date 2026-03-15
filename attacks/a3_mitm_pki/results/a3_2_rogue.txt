@@ -1,0 +1,116 @@
+Connecting to 127.0.0.1
+Can't use SSL_get_servername
+depth=0 CN=localhost, O=TFG-PoC-UPF, C=ES
+verify return:1
+CONNECTED(00000004)
+---
+Certificate chain
+ 0 s:CN=localhost, O=TFG-PoC-UPF, C=ES
+   i:CN=localhost, O=TFG-PoC-UPF, C=ES
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Mar  9 15:16:04 2026 GMT; NotAfter: Mar  9 15:16:04 2027 GMT
+-----BEGIN CERTIFICATE-----
+MIIB4DCCAYWgAwIBAgIUUy+woMKwVAssGKE39wu9JR8+olIwCgYIKoZIzj0EAwIw
+NzESMBAGA1UEAwwJbG9jYWxob3N0MRQwEgYDVQQKDAtURkctUG9DLVVQRjELMAkG
+A1UEBhMCRVMwHhcNMjYwMzA5MTUxNjA0WhcNMjcwMzA5MTUxNjA0WjA3MRIwEAYD
+VQQDDAlsb2NhbGhvc3QxFDASBgNVBAoMC1RGRy1Qb0MtVVBGMQswCQYDVQQGEwJF
+UzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABAgshrzuUUpfqJSFUNL8JOaZzRdK
+TTy2tYbNWAHjw5+fBcsMHaA0vt5mIvH95zd3sroDUgCIVsGH+vgSNGljpeWjbzBt
+MB0GA1UdDgQWBBSvQo81oXSyHve312wuQxhh9Ii14jAfBgNVHSMEGDAWgBSvQo81
+oXSyHve312wuQxhh9Ii14jAPBgNVHRMBAf8EBTADAQH/MBoGA1UdEQQTMBGHBH8A
+AAGCCWxvY2FsaG9zdDAKBggqhkjOPQQDAgNJADBGAiEArf26b9IJ8C4XPmGdtd6j
+w5vXn9dBxnirC06z6RlpkTECIQCOoyf7bBWrT0xwXZrcyLDuowMeB/06qTMAd3LS
+X6yXSA==
+-----END CERTIFICATE-----
+---
+Server certificate
+subject=CN=localhost, O=TFG-PoC-UPF, C=ES
+issuer=CN=localhost, O=TFG-PoC-UPF, C=ES
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Negotiated TLS1.3 group: X25519MLKEM768
+---
+SSL handshake has read 1942 bytes and written 1556 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: 7E15565E1408B84C33BA74D8B5E4818E15E6F52B4689CFBE4CC9DBFB0FB0F3C9
+    Session-ID-ctx: 
+    Resumption PSK: 690E04F6911BF4A8E383718AB1B10E938C772A58ED99ABEDA44F7F9EFCB3CB0C65A5E4F6DB439E865BEF6C91A123392D
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - f0 77 6a 5f 3c bc 93 21-75 e7 2a 7c 5b 3f 6f 53   .wj_<..!u.*|[?oS
+    0010 - 64 0c 13 d4 1f cb 90 f3-f1 c2 ba f0 d8 16 51 76   d.............Qv
+    0020 - 7b ad 08 7e 95 8a 7c af-05 52 ef 54 40 75 32 01   {..~..|..R.T@u2.
+    0030 - 39 96 53 c6 b1 18 46 c4-23 13 d2 76 ce eb 1b 6d   9.S...F.#..v...m
+    0040 - 35 b5 e3 0c d4 d3 89 5e-17 ae eb 85 04 16 6a c6   5......^......j.
+    0050 - fd 1a 4f 1b 53 1d 89 ac-1f ea 5e 38 87 ad 83 cc   ..O.S.....^8....
+    0060 - a1 02 02 e1 67 ef de 27-b1 50 3c fb e6 98 ac 4f   ....g..'.P<....O
+    0070 - 69 27 42 2f d0 8a 1d cf-86 69 dd d8 97 94 a8 11   i'B/.....i......
+    0080 - 17 db ca 09 9d 8e 21 05-2d f2 8f 22 96 83 60 66   ......!.-.."..`f
+    0090 - 49 94 8d 18 ce 6b 1e f5-3b d3 dd 9e 26 42 8f ae   I....k..;...&B..
+    00a0 - 4f 2f f6 2d 09 4b 05 4b-8c 3d 87 29 a1 f9 15 e2   O/.-.K.K.=.)....
+    00b0 - 87 04 5c c2 f0 ea 18 f7-81 76 46 09 5d bd 67 41   ..\......vF.].gA
+    00c0 - 2b e9 7f 5d 14 32 28 a4-48 ee c5 0f 9a 67 1a d0   +..].2(.H....g..
+
+    Start Time: 1773563914
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: 3261C4047D27747A2EE5792184812A22A53EC9454049D3C83B54D586B049953D
+    Session-ID-ctx: 
+    Resumption PSK: FD3229174488C2219FCF4A44E4568D57812A836DFB84B8313B562DFC2334523E82A7C3F3B958EE076B271DA295EB15D4
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - f0 77 6a 5f 3c bc 93 21-75 e7 2a 7c 5b 3f 6f 53   .wj_<..!u.*|[?oS
+    0010 - 15 ce eb b5 0b 6b 93 40-e9 e4 78 54 04 ad 30 d8   .....k.@..xT..0.
+    0020 - 30 2c 65 e4 2e fb a8 d8-c5 eb b4 b1 ea ba 71 cd   0,e...........q.
+    0030 - ad 7d ca 8e 83 8a 76 c3-dc a3 83 13 51 c3 7b f0   .}....v.....Q.{.
+    0040 - fe 70 d7 bb 51 a5 0f 6f-80 9e 23 cf 9e 14 f9 11   .p..Q..o..#.....
+    0050 - d7 5e 1e 75 e4 67 21 35-eb fa 49 4f 10 d1 4a 49   .^.u.g!5..IO..JI
+    0060 - 7c e8 d2 64 f3 5e 23 f0-83 14 14 2e be de a4 79   |..d.^#........y
+    0070 - a2 48 cf b6 43 76 b7 87-78 0f b3 fb 5a e5 8f 53   .H..Cv..x...Z..S
+    0080 - 26 ae 09 01 1d cc a1 8e-94 5f 9e 3f f3 3f f3 c9   &........_.?.?..
+    0090 - 14 07 38 1e dc 7e 74 85-f9 f7 5f 82 c2 3f bd 11   ..8..~t..._..?..
+    00a0 - d3 9b f5 10 e1 5c ca 90-2d 8f ef 71 64 34 08 da   .....\..-..qd4..
+    00b0 - d4 ee 14 9e eb 19 54 f5-12 94 79 63 28 b7 db 76   ......T...yc(..v
+    00c0 - 19 a7 a0 f6 ac 6c ba 74-f0 43 43 7f 7b 87 c0 d6   .....l.t.CC.{...
+
+    Start Time: 1773563914
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK

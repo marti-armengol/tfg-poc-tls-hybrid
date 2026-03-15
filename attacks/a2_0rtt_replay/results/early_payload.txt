@@ -1,0 +1,5 @@
+POST /transfer HTTP/1.0
+Host: localhost
+Content-Length: 21
+
+amount=1000&dest=eve
